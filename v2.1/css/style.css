@@ -1,0 +1,210 @@
+/* --------------------------------------------------------
+--------------------START Global Style---------------------
+----------------------------------------------------------*/
+* {
+  box-sizing: bxorder-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../beachOptz1.jpg');
+  background-attachment: fixed; /* To make sure the entire element is always covered */
+  background-size: cover; /* To cover the entire element */
+  
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 20px;
+}
+/* --------------------------------------------------------
+--------------------START Global Style---------------------
+----------------------------------------------------------*/
+
+
+/* --------------------------------------------------------
+--------------------START Top Navigation Style------------- 
+----------------------------------------------------------*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin: 10px 10px 0px 10px; /* Top, Right, Bottom, Left */
+  /* position: sticky; 
+  top: 10px;
+  z-index: 1; */
+}
+
+/* Styles the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  
+  border-top: 12px solid #333;
+  border-right: 20px solid #333;
+  transition: 0.3s ease-in-out;
+}
+
+/* Changes color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+  /* border-top: 12px solid red; */
+  border-top: 12px solid #04AA6D;
+  border-right: 20px solid #f6f6f6;
+}
+
+/* Changes color of active nav link */
+#active-navlink {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+  /* border-top: 12px solid red; */
+  border-top: 12px solid #04AA6D;/* Green */
+  border-right: 20px solid #f6f6f6;
+}
+/* --------------------------------------------------------
+--------------------END Top Navigation Style--------------- 
+----------------------------------------------------------*/
+
+
+/* --------------------------------------------------------
+--------------------START Footer Style--------------------- 
+----------------------------------------------------------*/
+.footer {
+  /* background-color: green; /* BOUNDARY TEST */
+	height: 100%;
+	background-color: #f1f1f1;
+    margin: 0px 10px 10px 10px; /* Top, Right, Bottom, Left */
+    padding: 10px;
+}
+
+.qr-code-container {
+	width: 500px;
+	height: 220px;
+	margin: auto;
+	background-color: orange;
+ }
+ 
+ .qr-code-container img {
+	width: 200px;
+	height: 200px;
+	margin: 10px 150px;
+ }
+
+/* --------------------------------------------------------
+--------------------END Footer Style----------------------- 
+----------------------------------------------------------*/
+
+
+/* --------------------------------------------------------
+--------------------START Media Queries Style-------------- 
+----------------------------------------------------------*/
+/*
+Add:
+_ 1200 Larger laptops and desktops
+_ 1024 Larger smartphones, tablets and smaller laptops
+_ 768 Modern smartphones and smaller tablets
+_ 480 Extra small phones
+*/
+@media screen and (max-width: 900px) {
+  .hero-text {
+    padding: 20px 20px 0px 20px; /* Use padding if possible instead of position and top, left, etc. */
+  }
+  
+  .button1 {
+    left: 20px;
+    bottom: 23px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Utilities */
+  .topnav a {
+    display: none;
+  }
+
+  #active-navlink {
+    display: block;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  .section2-nav p {
+    top: 20px;
+    left: 20px;
+    /* padding-left: 20px; */
+    /* text-align: center; */
+    font-size: 14px;
+    /* color: white; */
+  }
+
+/* TODO Columns need to become rows */
+
+  .circle1 {
+    top: 30%;
+    left: 10vw;
+  }
+  
+  .circle2 {
+    top: 10%;
+    left: 5vw;
+  }
+
+  .circle3 {
+    top: 15%;
+    left: 50vw;
+  }
+
+  .circle4 {
+    top: 60%;
+    left: 65vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-text {
+    width: 80%;
+    margin: 0px 10%; /* (100% - width)/2 for left and right margins */
+    padding: 23px 0px 0px 0px;
+  }
+  
+  /* .hero-text p {
+    font-size: 20px;
+  } */
+
+  .button1 {
+    width: 80%;
+    left: 0px;
+    margin: 0px 10%; /* (100% - width)/2 for left and right margins */
+    padding: 7px 16px;
+  }
+
+  
+}
+
+/* Smallest Screen Size */
+@media screen and (max-width: 320px) {
+  .hero-text {
+    /* background-color: red; */ /* BOUNDARY TEST */ 
+    height: 60%; /* Keep, test boundary */
+  }
+  
+  .button1 {
+    font-size: 14px;
+  }
+
+  .section2-nav p {
+    padding-bottom: 0;
+  }
+}
+
+/* --------------------------------------------------------
+--------------------END Media Querues Style---------------- 
+----------------------------------------------------------*/

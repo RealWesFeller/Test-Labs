@@ -1,0 +1,163 @@
+/* --------------------------------------------------------
+--------------------START Section 3 Style------------------ 
+----------------------------------------------------------*/
+.section3-nav {
+  overflow: hidden;
+  background-color: #333;
+  margin: 0px 10px 0px 10px; /* Top, Right, Bottom, Left */
+}
+
+.section3-nav a {
+  float: left;
+  display: block;
+  background-color: #04AA6D;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.section3-nav span {
+  /* background-color: red; */ /* BOUNDARY TEST */ 
+
+  position: relative;
+  top: 27px;
+  left: 57px;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.section3 {
+  /* Automatically resizes to fit its elements */
+  background-color: #ddd;
+  height: 65vh;
+  position: relative;
+
+  /* Parent margin */
+  margin: 0px 10px 0px 10px; /* Top, Right, Bottom, Left */
+  padding: 20px;
+
+}
+
+.section3-text-goals {
+  /* background-color: red; */ /* BOUNDARY TEST */
+
+  height: 60px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section3 mark {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  font-size: 26px;
+}
+
+/* Global Circle Styles*/
+.circle-goals {
+  position: absolute;
+  background-color: teal;
+  border-radius: 50%;
+  /* border: 10px solid #bbb; */
+}
+
+.circle-large {
+  height: 200px;
+  width: 200px;
+}
+
+.circle-medium {
+  height: 100px;
+  width: 100px;
+}
+
+.circle-small {
+  height: 50px;
+  width: 50px;
+}
+
+/* Local Circle Styles*/
+.circle1 {
+  top: 30%;
+  left: 27vw;
+}
+
+.circle1 a {
+  position: relative;
+  /* Top = (.circle height / 2) - (2 * padding), Left = ((.circle width / 2) / 2)  + 5*/
+  top: 80px;
+  left: 57px;
+  
+  padding: 10px; /* Better than using height and width and text-align to center text */
+  
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.circle1 a:hover {
+  left: 53px;
+}
+
+.circle2 {
+  top: 20%;
+  left: 10vw;
+}
+
+.circle2 p {
+  padding: 10px; /* Better than using height and width and text-align to center text */
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  margin: 25px 25px 0px 25px; /* Top = (.circle height / 2) - (2 * padding), Right & Left = (.circle width / 2) / 2 */
+  text-align: center;
+}
+
+.circle3 {
+  top: 30%;
+  left: 65vw;
+}
+
+.circle3 p {
+  padding: 10px; /* Better than using height and width and text-align to center text */
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  margin: 25px 25px 0px 25px; /* Top = (.circle height / 2) - (2 * padding), Right & Left = (.circle width / 2) / 2 */
+  text-align: center;
+}
+
+.circle4 {
+  top: 60%;
+  left: 65vw;
+}
+
+.circle4 p {
+  padding: 5px; /* Better than using height and width and text-align to center text */
+  /* background-color: #333; */
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 7px 10px 0px 7px; /* Top = (.circle height / 2) - (2 * padding), Right & Left = (.circle width / 2) / 2 */
+  text-align: center;
+}
+
+.border-rainbow:hover {
+  background-color: #302244;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  transition: 0.3s;
+}
+
+/* --------------------------------------------------------
+--------------------END Section 3 Style-------------------- 
+----------------------------------------------------------*/

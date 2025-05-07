@@ -1,0 +1,129 @@
+/* --------------------------------------------------------
+--------------------START Section 2 Style------------------ 
+----------------------------------------------------------*/
+.section2-nav {
+  overflow: hidden;
+  background-color: #333;
+  margin: 0px 10px 0px 10px; /* Top, Right, Bottom, Left */
+}
+
+.section2-nav a {
+  float: left;
+  display: block;
+  background-color: #04AA6D;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.section2-nav p {
+  /* background-color: red; */ /* BOUNDARY TEST */ 
+  
+  /* position: relative; */
+  /* left: 57px; */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.section2 {
+  /* Automatically resizes to fit its elements */
+  height: 100%;
+  background: #212121;
+ 
+  /* Parent margin */
+  margin: 0px 10px 0px 10px; /* Top, Right, Bottom, Left */
+  padding: 10px;
+}
+
+/* Unused in this version (v2.1), from v2.0
+/* Container for flexboxes 
+.row {
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+}
+
+/* Create three equal columns that sits next to each other 
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+  height: 65vh;
+  font-weight: bold;
+  font-size: 16px;
+  background-color:#aaa;
+  color: white;
+  /* justify-items: center; 
+}
+
+.column-2 {
+  background-color:#bbb;
+}
+*/
+
+.card {
+  /* width: 210px; */
+  width: 96%;
+  /* height: 254px;*/
+  height: 85vh;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 15px; 
+  margin: 2% 2% 3% 2%;
+  /* padding: .4em; */
+}
+
+.card p {
+  height: 100%;
+  flex: 4;
+  overflow: hidden;
+  border-radius: 2px;
+  /* transition: all .5s; */
+  background: #212121;
+  border: 3px solid #00FF00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease-in-out;
+
+}
+
+.card p:hover {
+  flex: 16;
+  transition: 1s ease-in-out;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(90deg);
+  /* transition: all .5s; */
+  text-transform: uppercase;
+  /* color: #ff568e; */
+  color: #00FF00;
+  letter-spacing: .1em;
+  top: 0;
+  transition: .5s ease-in-out;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+  position: relative;
+  /* top: -165px; */
+  top: -40%;
+  transition: 1s ease-in-out;
+}
+
+
+
+/* --------------------------------------------------------
+--------------------END Section 2 Style-------------------- 
+----------------------------------------------------------*/

@@ -1,0 +1,29 @@
+/* --------------------------------------------------------
+--------------------START Utilities Style------------------ 
+----------------------------------------------------------*/
+/* Text */
+.highlight-red {
+	background-color: red;
+	font-weight: bold;
+	color: white;
+	padding: 3px;
+}
+
+.highlight-blue {
+	background-color: blue;
+	font-weight: bold;
+	color: white;
+	padding: 3px;
+}
+
+.highlight-orange {
+	background-color: orange;
+	font-weight: bold;
+	color: white;
+	padding: 3px;
+}
+
+
+/* --------------------------------------------------------
+--------------------END Utilities Style-------------------- 
+----------------------------------------------------------*/
